@@ -1,0 +1,2 @@
+CREATE TABLE category (categoryid int NOT NULL, name VARCHAR(255), PRIMARY KEY (categoryid));
+CREATE TABLE product (productid int NOT NULL, name VARCHAR(255), categoryId int, PRIMARY KEY (productid), FOREIGN KEY (categoryId) REFERENCES category(categoryid));
